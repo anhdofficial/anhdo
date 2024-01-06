@@ -1,0 +1,514 @@
+/* color chung */
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --text-color: #333;
+    --primary-color: #ff4c00;
+}
+
+* {
+    /* inherit - kế thừa từ thẻ chứa nó */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Khi để 62.5% thì 1 rem = 10px => 1.2rem = 12px,... */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.screen--box {
+    margin-bottom: 35px;
+}
+
+.active {
+    display: block;
+}
+
+.gird {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.gird_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col10-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.col10-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+/*  */
+.c-0 {
+    display: none;
+}
+/* layout có 12 col lấy 100% / 12 rồi * với số col muốn css*/
+.c-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.c-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.c-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.c-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.c-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+.c-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.c-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+.c-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+.c-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.c-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+.c-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+.c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* pc */
+@media (min-width: 1024px) {
+    .gird {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .gird_row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -12px;
+        margin-left: -12px;
+    }
+
+    .col {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}
+
+/* Màn hình tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .gird_row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+
+    .col {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .header__logo {
+        margin-left: 15px;
+    }
+
+    .slider-description {
+        width: 76%;
+    }
+
+    .slider-icon-left {
+        left: 0;
+    }
+    .slider-icon-right {
+        right: 0;
+    }
+
+    .thanhtoan__box,
+    .sanpham-heading,
+    .introduce__members-list,
+    .introduce__members-heading,
+    .introduce-heading,
+    .introduce__list,
+    .hotel__product-list,
+    .hotel__product-heading,
+    .hotel__slider-box,
+    .dulich-box,
+    .footer__box,
+    .contact__container,
+    .contact__tours-list,
+    .contact__outstanding {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sanpham-box {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .introduce__item-img {
+        width: 100%;
+        height: 100vh;
+        margin-top: 15px;
+    }
+
+    .contact__container-item:nth-child(3) {
+        border-left: none;
+    }
+
+    .hotel__form-search {
+        width: 780px;
+    }
+
+    .m-9-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m-0 {
+        display: none;
+    }
+    .m-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .m-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .m-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .m-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .m-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .m-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Màn hình mobile */
+@media (max-width: 739px) {
+    .gird_row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -2px;
+        margin-left: -2px;
+    }
+
+    .col {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    .header__item {
+        display: block;
+    }
+
+    .mobile-btn {
+        display: inline-block;
+    }
+
+    .modal__box {
+        display: none;
+    }
+
+    .header__logo {
+        margin-left: 15px;
+    }
+
+    .slider-description {
+        width: 76%;
+        bottom: 20%;
+    }
+
+    .slider-heading {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .slider-sub-heading span,
+    .slider-sub-heading {
+        font-size: 1.7rem;
+    }
+
+    .contact__container {
+        margin-top: 40px;
+    }
+    .contact__outstanding {
+        margin: 45px 0 30px;
+    }
+    .contact__outstanding-header {
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+    .contact__outstanding-sub-header {
+        font-size: 3.6rem;
+    }
+    .contact__container-item {
+        padding: 15px 0;
+        border-left: none;
+        border-bottom: 1px dashed #c0c0c0;
+    }
+    .contact__container-item:last-child {
+        border-left: none;
+        border-bottom: none;
+    }
+
+    .slider-icon-left {
+        padding: 30px 15px;
+        left: 0px;
+    }
+    .slider-icon-right {
+        padding: 30px 15px;
+        right: 0px;
+    }
+
+    .thanhtoan__box,
+    .sanpham-heading,
+    .introduce__members-list,
+    .introduce__members-heading,
+    .introduce-heading,
+    .introduce__list,
+    .hotel__product-list,
+    .hotel__product-heading,
+    .hotel__slider-box,
+    .dulich-box,
+    .footer__box,
+    .contact__container,
+    .contact__tours-list,
+    .contact__outstanding {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .sanpham-box {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .introduce__item-img {
+        width: 100%;
+        height: 100vh;
+        margin-top: 15px;
+    }
+
+    .contact__container-item:nth-child(3) {
+        border-left: none;
+    }
+
+    .dulich__sidebar-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4px;
+    }
+    .dulich__sidebar-item {
+        width: 48%;
+        margin: 5px 7px 5px 0px;
+    }
+    .dulich__sidebar-heading {
+        padding-top: 10px;
+    }
+    .dulich__sort {
+        margin-top: 10px;
+    }
+    .dulich__cart {
+        margin-top: 8px;
+    }
+
+    .hotel__slider-heading {
+        display: none;
+    }
+    .hotel__slider-description {
+        display: none;
+    }
+    .hotel__form-search {
+        width: calc(100% - 10px);
+    }
+    .hotel__sapxep label {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .box__contact-item,
+    .box__haed-tad,
+    .box__contact-mid {
+        width: auto;
+    }
+
+    .l-0 {
+        display: none;
+    }
+    .l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .l-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .l-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+    .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 2.2rem;
+    color: var(--black-color);
+}
+
+.pagination__left-btn,
+.pagination__right-btn {
+    padding: 10px;
+}
+
+.pagination__quantity-item:hover,
+.pagination__left-btn:hover,
+.pagination__right-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.pagination__quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__quantity-item {
+    padding: 10px;
+    margin: 0 4px;
+    color: var(--black-color);
+}
+
+@keyframes slideIn {
+    from {
+      top: -80%;
+    }
+    to {
+      top: 0;
+    }
+  }
